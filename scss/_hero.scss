@@ -1,0 +1,56 @@
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+
+    h1 {
+        font-size: 7rem;
+        text-align: center;
+        line-height: 95px;
+    }
+
+    p {
+        font-size: 2.2rem;
+        color: #777E8B;
+        margin: 30px 0;
+        letter-spacing: -1%;
+    }
+
+    .hero-container_form {
+        display: flex;
+        justify-content: end;
+        width: 513px;
+        height: 71px;
+        margin: 45px 0;
+
+        input {
+            position: absolute;
+            z-index: 1;
+            width: 513px;
+            height: 71px;
+            font-size: 1.6rem;
+            border: none;
+            border-radius: 35px;
+            background-color: #E5E5E5;
+            color: black;
+            padding-left: 30px;
+        }
+
+        button {
+            
+            right: 0;
+            z-index: 2;
+            width: 170px;
+            height: 71px;
+            font-size: 1.6rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 35px;
+            background: linear-gradient(180deg, #71D472 0%, #4CC573 100%);
+            color: black;
+            cursor: pointer;
+        }
+    }
+}

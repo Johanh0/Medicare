@@ -41,10 +41,11 @@ html {
     display: flex;
     justify-content: center;
     align-items: center; }
-    .nav-container .nav-container_btns p {
+    .nav-container .nav-container_btns a {
       font-size: 1.6rem;
       margin-right: 60px;
-      cursor: pointer; }
+      text-decoration: none;
+      color: black; }
     .nav-container .nav-container_btns button {
       width: 104px;
       height: 48px;
@@ -53,3 +54,96 @@ html {
       border-radius: 50px;
       color: white;
       cursor: pointer; }
+  .nav-container .nav-container_burger {
+    display: none; }
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px; }
+  .hero-container h1 {
+    font-size: 7rem;
+    text-align: center;
+    line-height: 95px; }
+  .hero-container p {
+    font-size: 2.2rem;
+    color: #777E8B;
+    margin: 30px 0;
+    letter-spacing: -1%; }
+  .hero-container .hero-container_form {
+    display: flex;
+    justify-content: end;
+    width: 513px;
+    height: 71px;
+    margin: 45px 0; }
+    .hero-container .hero-container_form input {
+      position: absolute;
+      z-index: 1;
+      width: 513px;
+      height: 71px;
+      font-size: 1.6rem;
+      border: none;
+      border-radius: 35px;
+      background-color: #E5E5E5;
+      color: black;
+      padding-left: 30px; }
+    .hero-container .hero-container_form button {
+      right: 0;
+      z-index: 2;
+      width: 170px;
+      height: 71px;
+      font-size: 1.6rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 35px;
+      background: linear-gradient(180deg, #71D472 0%, #4CC573 100%);
+      color: black;
+      cursor: pointer; }
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px; }
+
+.img-container_responsive {
+  display: none; }
+
+@media (max-width: 1000px) {
+  .nav-container {
+    justify-content: space-around;
+    padding: 0px 20px;
+    margin: 40px 0 0 0; }
+    .nav-container .nav-container_burger {
+      display: block; }
+    .nav-container .nav-container_ul {
+      display: none; }
+    .nav-container .nav-container_btns {
+      display: none; }
+  .hero-container h1 {
+    font-size: 6rem; }
+  .hero-container p {
+    text-align: center; }
+  .hero-container .hero-container_form {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 150px; }
+    .hero-container .hero-container_form input {
+      position: static;
+      text-align: center;
+      padding: 0;
+      width: 80vw;
+      max-width: 500px;
+      height: 100%;
+      margin-bottom: 20px; }
+    .hero-container .hero-container_form button {
+      height: 100%; }
+  .img-container {
+    display: none; }
+  .img-container_responsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
